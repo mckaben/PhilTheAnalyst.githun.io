@@ -1,189 +1,996 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Philippe Kabenla Porfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Philippe Kabenla - Senior Operations Administrator, Data Scientist & BI Analyst Portfolio" />
+  <title>Philippe Kabenla | Data Science & Business Intelligence Portfolio</title>
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-card: #131d31;
+      --bg-alt: #0f172a;
+      --border-color: #1e293b;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent-green: #10b981;
+      --accent-gold: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Philippe Kabenla Porfolio<br />
-						</h1>
-						<p>Data Analyst skilled in SQL, Tableau, PowerBI, and Python <a href="https://www.linkedin.com/in/philippe-kabenla-273519134">@PhilippeKabenla</a> 
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Philippe The Scientist</a>
-					</header>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/philippe-kabenla-273519134" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/mckaben" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				
-						</ul>
-					</nav>
+    /* Header & Navigation */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+    }
 
-				<!-- Main -->
-					<div id="main">
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/mckaben/PorfolioProjects/blob/main/NashVilleHouse%20date%20cleaning%20SQL.sql">Data Cleaning in SQL<br />
-									</a></h2>
-									<p>In this project I clean housing data in Microsoft SQL Server.<br />
-									The cleaning consists in removing irrelevant and duplicate data,  <br />
-									doing type conversion , and handling missing data.</p>
-								</header>
-								<a href="https://github.com/mckaben/PorfolioProjects/blob/main/NashVilleHouse%20date%20cleaning%20SQL.sql" class="image main"><img src="images/housing.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/mckaben/PorfolioProjects/blob/main/NashVilleHouse%20date%20cleaning%20SQL.sql" class="button large">View Project</a></li>
-								</ul>
-							</article>
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-main);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/mckaben/PorfolioProjects/blob/main/SQL%20porfolio%20project.sql">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/mckaben/PorfolioProjects/blob/main/SQL%20porfolio%20project.sql" class="image fit"><img src="images/covid.jpg" alt="" /></a>
-									<p>Data Exploration of Covid 19 Dataset in SQL Server.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/mckaben/PorfolioProjects/blob/main/SQL%20porfolio%20project.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">Tableau Projects<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/philippe.a.kabenla" class="image fit"><img src="images/tableau.png" alt="" /></a>
-									<p>This section display some of the projects' dashboards created with tableau.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/philippe.a.kabenla" class="button">View Projects</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-				
-										<h2><a href="#">Data Professional Survey Breakdown<br />
-										</a></h2>
-									</header>
-									<a href="https://app.powerbi.com/groups/me/reports/549c6a03-fcf3-4231-a843-556fd05075cb?ctid=8658147e-bf9e-499b-8a47-d81d90889e0e&pbi_source=linkShare" class="image fit"><img src="images/surveys.jpg" alt="" /></a>
-									<p>Data Visualization with PowerBI of Profession Survey breakdown taken from linkedin.</p>
-									<ul class="actions special">
-										<li><a href="https://app.powerbi.com/groups/me/reports/549c6a03-fcf3-4231-a843-556fd05075cb?ctid=8658147e-bf9e-499b-8a47-d81d90889e0e&pbi_source=linkShare" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-	
-										<h2><a href="https://github.com/mckaben/virtual-interships/blob/main/Web%20scraping.ipynb">Web scaping, WordCloud, Sentiment Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/mckaben/virtual-interships/blob/main/Web%20scraping.ipynb" class="image fit"><img src="images/sraping.webp" alt="" /></a>
-									<p>British Airways Customer Review Analysis.<br />
-										data is scraped online with the help of Python's Libraries<br />
-										such as BeautifulSoup and requests.<br />
-										Creation of WordCloud to identify some of the most<br />
-										used words during the review comments.<br />
-										In addition, Sentiment Analysis is conducted to identify<br /> 
-										the sentiment of people through their comments.<br /></p>
-									<ul class="actions special">
-										<li><a href="https://github.com/mckaben/virtual-interships/blob/main/Web%20scraping.ipynb" class="button">View Project</a></li>
-									
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/mckaben/Machine-learning-projects/blob/main/Loan%20Pred%20Capstone%202022.ipynb">Loan Prediction Status Using Machine learning<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/mckaben/Machine-learning-projects/blob/main/Loan%20Pred%20Capstone%202022.ipynb" class="image fit"><img src="images/loan.jpg" alt="" /></a>
-									<p>The goal of this project is to forecast and predict the loan status of applicants and identify<br />
-										the best model based on accuracy rates. The suggested machine learning algorithms should be<br />
-										able to display a close loan status prediction of customers by reducing the risk of being biased.<br />
-										The following are some possible analysis decision points.<br />
-										• What level of Accuracy is the forecasted loan status from each model?<br />
-										• Which variables among the selected ones affect the loan status?<br />
-										• What is the model with the best performance?<br />
-										• Can the presence of other variables such as loan repayment affect the outcome of the loan<br />
-										status?<br />
-										• Is there any correlation between credit history and loan status?.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/mckaben/Machine-learning-projects/blob/main/Loan%20Pred%20Capstone%202022.ipynb" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+    .logo span { color: var(--primary); }
 
-				
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
 
+    .nav-menu a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
 
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Austell, Ga 30106</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(678) 755-3462</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">philippek18@gamil.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/philippe-kabenla-273519134" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/mckaben" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    .nav-menu a:hover { color: var(--text-main); }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    .btn-nav-contact {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
 
-			</div>
+    .btn-nav-contact:hover { background: var(--primary-hover); }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    /* Hero Section */
+    .hero-section {
+      padding: 160px 0 100px;
+      background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 50%);
+    }
 
-	</body>
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--accent-green);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .pulsing { animation: pulse 2s infinite; }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    .hero-text h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #60A5FA, #3B82F6, #1D4ED8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 30px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .stat-item h3 {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    .stat-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Section & Cards Layout */
+    .section { padding: 90px 0; }
+    .bg-alt { background-color: var(--bg-alt); }
+
+    .section-header {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+
+    .section-header h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-header p { color: var(--text-muted); }
+
+    .edu-grid, .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+
+    .glass-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 36px;
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .timeline-block {
+      margin-top: 24px;
+      padding-left: 20px;
+      border-left: 2px solid var(--primary);
+    }
+
+    .year-badge {
+      background: rgba(59, 130, 246, 0.15);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .cert-item {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.02);
+      border-left: 4px solid var(--border-color);
+    }
+
+    .cert-item.earned { border-left-color: var(--accent-green); }
+    .cert-item.in-progress { border-left-color: var(--accent-gold); }
+    .cert-item.roadmap { border-left-color: var(--primary); }
+
+    .cert-status {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .earned .cert-status { color: var(--accent-green); }
+    .in-progress .cert-status { color: var(--accent-gold); }
+    .roadmap .cert-status { color: var(--primary); }
+
+    .learning-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .learning-tags span {
+      background: #1e293b;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* BI Gallery Grid */
+    .filter-controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .dash-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+
+    .dash-card:hover { transform: translateY(-4px); }
+
+    .dash-img-wrapper {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .dash-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .badge-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(11, 15, 25, 0.85);
+      color: #fff;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+    }
+
+    .dash-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .dash-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .dash-content p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tech-tags span {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .dash-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 12px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .btn-sm {
+      padding: 8px 14px;
+      font-size: 0.85rem;
+    }
+
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-hover); }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.05); }
+
+    .btn-github { background: #24292E; color: #fff; }
+    .btn-github:hover { background: #1b1f23; }
+
+    /* Modals */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(11, 15, 25, 0.88);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      overflow-y: auto;
+      padding: 40px 20px;
+    }
+
+    .modal-dialog {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      max-width: 850px;
+      margin: 0 auto;
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px; right: 24px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .modal-body {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .modal-section h4 {
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .modal-section p, .modal-section ul {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .modal-section ul { padding-left: 20px; }
+
+    .modal-preview {
+      margin-top: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .modal-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .modal-footer {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Experience & Skills */
+    .job-item { margin-top: 20px; }
+    .job-date { font-size: 0.8rem; color: var(--primary); font-weight: 600; }
+    .job-item ul { margin-top: 10px; padding-left: 20px; color: var(--text-muted); font-size: 0.9rem; }
+    .skill-category { margin-top: 20px; }
+    .skill-category h4 { font-size: 0.95rem; color: var(--text-main); margin-bottom: 4px; }
+    .skill-category p { color: var(--text-muted); font-size: 0.88rem; }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border-color);
+      padding: 80px 0 40px;
+      text-align: center;
+    }
+
+    .footer-content { max-width: 700px; margin: 0 auto; }
+    .footer h2 { font-size: 2rem; margin-bottom: 12px; }
+    .footer p { color: var(--text-muted); margin-bottom: 30px; }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .contact-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .contact-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .copyright { font-size: 0.85rem; color: var(--text-muted); }
+
+    @media (max-width: 900px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">Philippe Kabenla<span>.</span></a>
+      <nav class="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#education-certs">Education & Certs</a>
+        <a href="#bi-dashboards">BI Dashboards</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn-nav-contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge-pill"><i class="fas fa-circle-dot pulsing"></i> Open to Data & AI Opportunities</span>
+        <h1>Philippe <span class="gradient-text">Kabenla</span></h1>
+        <p class="hero-subtitle">Senior Operations Administrator & Aspiring Data Professional specializing in Business Intelligence, Predictive Analytics, Machine Learning, and Cloud Infrastructure.</p>
+        <div class="hero-cta">
+          <a href="#bi-dashboards" class="btn btn-primary">Explore BI Dashboards <i class="fas fa-arrow-right"></i></a>
+          <a href="Resume(Data Analyst) updated_2.docx" class="btn btn-outline" download><i class="fas fa-download"></i> Download Résumé</a>
+        </div>
+      </div>
+      <div class="hero-stats-card">
+        <div class="stat-item">
+          <h3>M.S. Data Science</h3>
+          <p>Utica University (Cybersecurity Specialization)</p>
+        </div>
+        <div class="stat-item">
+          <h3>B.S. Engineering</h3>
+          <p>Kennesaw State University</p>
+        </div>
+        <div class="stat-item">
+          <h3>AWS & Python</h3>
+          <p>Cloud Architecture & Predictive Modeling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Education, Certifications & Professional Development -->
+  <section id="education-certs" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education & Credentials</h2>
+        <p>Academic background and continuous certification roadmap in data science, cloud computing, and cybersecurity.</p>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Academic Background -->
+        <div class="card glass-card">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Academic Background</h3>
+          <div class="timeline-block">
+            <span class="year-badge">2022</span>
+            <h4>Master of Science in Data Science</h4>
+            <p class="institution">Utica University</p>
+            <p class="detail"><strong>Specialization:</strong> Cybersecurity</p>
+          </div>
+          <div class="timeline-block">
+            <span class="year-badge">KSU</span>
+            <h4>Bachelor of Science in Mechanical Engineering</h4>
+            <p class="institution">Kennesaw State University</p>
+          </div>
+        </div>
+
+        <!-- Certifications & Development -->
+        <div class="card glass-card">
+          <div class="card-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Certifications & Cloud Roadmap</h3>
+          
+          <!-- Earned -->
+          <div class="cert-item earned">
+            <div class="cert-status"><i class="fas fa-check-circle"></i> Earned — Sept 2023</div>
+            <h4>Google Advanced Data Analytics Professional Certificate</h4>
+            <p>Coursera</p>
+          </div>
+
+          <!-- In Progress (AWS) -->
+          <div class="cert-item in-progress">
+            <div class="cert-status"><i class="fas fa-spinner fa-spin"></i> Exam Preparation — In Progress</div>
+            <h4>AWS Certified Cloud Practitioner (CLF-C02)</h4>
+            <div class="learning-tags">
+              <span>AWS Cloud Fundamentals</span>
+              <span>Cloud Computing Concepts</span>
+              <span>Global Infrastructure</span>
+              <span>Security & Compliance</span>
+              <span>Pricing & Billing</span>
+              <span>Core Services</span>
+            </div>
+          </div>
+
+          <!-- Future Roadmap -->
+          <div class="cert-item roadmap">
+            <div class="cert-status"><i class="fas fa-rocket"></i> Future Pipeline</div>
+            <h4>Cloud Architecture, Data Engineering & Analytics</h4>
+            <p>Targeting certifications in AWS Solutions Architect, Data Engineering, and Advanced Machine Learning pipelines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Business Intelligence & Power BI Dashboards -->
+  <section id="bi-dashboards" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Business Intelligence & Power BI Dashboards</h2>
+        <p>Transforming complex datasets into actionable enterprise insights through interactive modeling, DAX, dynamic slicers, and spatial analytics.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Dashboards</button>
+        <button class="filter-btn" data-filter="economics">Economics & Demographics</button>
+        <button class="filter-btn" data-filter="health">Health Analytics</button>
+        <button class="filter-btn" data-filter="retail">Retail Analytics</button>
+      </div>
+
+      <!-- Dashboard Gallery Grid -->
+      <div class="dashboard-grid">
+        
+        <!-- Project 1 -->
+        <div class="dash-card" data-category="economics">
+          <div class="dash-img-wrapper">
+            <img src="Screenshot 2026-11-05 141237_3.jpg" alt="Economic Indicators Dashboard" />
+            <span class="badge-tag">Power BI</span>
+          </div>
+          <div class="dash-content">
+            <h3>Economic Indicators & Income Analysis</h3>
+            <p>Focuses on poverty rates, median income distribution, economic disparities, and geographic comparisons across Colorado counties.</p>
+            <div class="tech-tags">
+              <span>DAX Measures</span><span>Spatial Slicers</span><span>KPI Cards</span>
+            </div>
+            <div class="dash-actions">
+              <button class="btn btn-sm btn-primary" onclick="openModal('modal-p1')"><i class="fas fa-eye"></i> View Case Study</button>
+              <a href="https://app.powerbi.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="dash-card" data-category="health">
+          <div class="dash-img-wrapper">
+            <img src="Screenshot 2026-11-05 141001_3.jpg" alt="Childhood Trauma Dashboard" />
+            <span class="badge-tag">Statistical Model</span>
+          </div>
+          <div class="dash-content">
+            <h3>Childhood Trauma & Adult Mental Health</h3>
+            <p>Evaluates Adverse Childhood Experiences (ACEs) alongside DASS and DERS metrics using standardized variables. *(Statistical association, non-diagnostic).*</p>
+            <div class="tech-tags">
+              <span>Regression (R²=0.827)</span><span>DASS / DERS</span><span>Correlation</span>
+            </div>
+            <div class="dash-actions">
+              <button class="btn btn-sm btn-primary" onclick="openModal('modal-p2')"><i class="fas fa-eye"></i> View Case Study</button>
+              <a href="https://app.powerbi.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="dash-card" data-category="economics">
+          <div class="dash-img-wrapper">
+            <img src="Screenshot 2026-11-05 141156_3.jpg" alt="Colorado Latino Demographics Dashboard" />
+            <span class="badge-tag">ArcGIS / GIS</span>
+          </div>
+          <div class="dash-content">
+            <h3>Colorado Latino Demographics & Economic Indicators</h3>
+            <p>Evaluates 2010 and 2020 demographic shifts, census tract analysis, labor participation, and county-level regional differences.</p>
+            <div class="tech-tags">
+              <span>ArcGIS Integration</span><span>Census Tracts</span><span>Labor Indicators</span>
+            </div>
+            <div class="dash-actions">
+              <button class="btn btn-sm btn-primary" onclick="openModal('modal-p3')"><i class="fas fa-eye"></i> View Case Study</button>
+              <a href="https://app.powerbi.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Global Retail -->
+        <div class="dash-card" data-category="retail">
+          <div class="dash-img-wrapper">
+            <img src="Screenshot 2026-11-05 141115_3.jpg" alt="Global Retail Performance Dashboard" />
+            <span class="badge-tag">Power BI</span>
+          </div>
+          <div class="dash-content">
+            <h3>Global Retail Performance & Expansion Analytics</h3>
+            <p>Analyzes international market volume, revenue trends ($10.67M revenue, 5.63M units sold), top 10 customer volumes, and monthly growth patterns.</p>
+            <div class="tech-tags">
+              <span>Revenue Trends</span><span>Global Demand</span><span>Sales Analytics</span>
+            </div>
+            <div class="dash-actions">
+              <button class="btn btn-sm btn-primary" onclick="openModal('modal-p4')"><i class="fas fa-eye"></i> View Case Study</button>
+              <a href="https://app.powerbi.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Education & Workforce -->
+        <div class="dash-card" data-category="economics">
+          <div class="dash-img-wrapper">
+            <img src="Screenshot 2026-11-05 141048_3.jpg" alt="Data Professional Survey Breakdown" />
+            <span class="badge-tag">Analytics</span>
+          </div>
+          <div class="dash-content">
+            <h3>Data Professional Industry & Compensation Survey</h3>
+            <p>Breakdown of survey respondents by country, programming preferences (Python/R), salary by job title, work-life satisfaction, and breaking-into-data metrics.</p>
+            <div class="tech-tags">
+              <span>Survey Analytics</span><span>Salary Benchmarking</span><span>Python vs R</span>
+            </div>
+            <div class="dash-actions">
+              <button class="btn btn-sm btn-primary" onclick="openModal('modal-p5')"><i class="fas fa-eye"></i> View Case Study</button>
+              <a href="https://app.powerbi.com" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Dedicated Project Detail Pages (Modals) -->
+
+  <!-- Modal 1 -->
+  <div id="modal-p1" class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('modal-p1')">&times;</button>
+      <h2>Economic Indicators & Income Analysis</h2>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fas fa-bullseye"></i> Research Question & Overview</h4>
+          <p>Investigates the structural relationship between median household income ($77.7K baseline), labor force participation (98.06%), and poverty rates (13.01%) across Colorado jurisdictions to identify vulnerable economic sectors.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fas fa-database"></i> Dataset & Source</h4>
+          <p>U.S. Census Bureau and American Community Survey (ACS) 5-Year Estimates.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fas fa-cogs"></i> Transformation, Modeling & DAX</h4>
+          <p>Transformed raw tables in Power Query, connected county geography shapefiles, and implemented custom DAX formulas for income-to-poverty ratios and income growth rate metrics (36.86%).</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fas fa-lightbulb"></i> Key Insights & Recommendations</h4>
+          <ul>
+            <li>High Latino concentration areas exhibiting poverty rates >25% face structural wage gaps despite labor participation rates over 90%.</li>
+            <li><strong>Recommendation:</strong> Direct vocational initiatives toward counties like Pueblo and Alamosa to bridge median wage gaps.</li>
+          </ul>
+        </div>
+        <div class="modal-preview">
+          <img src="Screenshot 2026-11-05 141237_3.jpg" alt="Dashboard Preview" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.powerbi.com" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Explore Interactive Dashboard</a>
+          <a href="https://github.com/mckaben" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal-p2" class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('modal-p2')">&times;</button>
+      <h2>Childhood Trauma & Adult Mental Health</h2>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fas fa-bullseye"></i> Overview & Objective</h4>
+          <p>Evaluates statistical associations between Adverse Childhood Experiences (ACEs) and adult emotional regulation metrics (DASS and DERS).</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fas fa-chart-line"></i> Statistical Modeling Results</h4>
+          <p>Multiple linear regression modeling ($R^2 = 0.827$) demonstrated significant predictive strength when incorporating standardized z-score subscales. <em>Note: Statistical model for analytical research; non-diagnostic tool.</em></p>
+        </div>
+        <div class="modal-preview">
+          <img src="Screenshot 2026-11-05 141001_3.jpg" alt="Dashboard Preview" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.powerbi.com" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+          <a href="https://github.com/mckaben" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal-p3" class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('modal-p3')">&times;</button>
+      <h2>Colorado Latino Demographics & Economic Indicators</h2>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fas fa-bullseye"></i> Research Questions</h4>
+          <p>Tracks decade-over-decade demographic growth (1.03M Hispanic population, 11.27% population growth) across 2010–2020 census tract boundaries in Colorado.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fas fa-map-marked-alt"></i> Spatial Visualizations</h4>
+          <p>Integrated ArcGIS spatial maps with dynamic county slicers to isolate Adams (185K), Denver (163K), and Arapahoe (115K) population centers.</p>
+        </div>
+        <div class="modal-preview">
+          <img src="Screenshot 2026-11-05 141156_3.jpg" alt="Dashboard Preview" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.powerbi.com" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+          <a href="https://github.com/mckaben" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal-p4" class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('modal-p4')">&times;</button>
+      <h2>Global Retail Performance & Expansion Analytics</h2>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fas fa-globe"></i> Market Overview</h4>
+          <p>Analyzes global revenue streams ($10.67M total revenue, 5.63M units sold) with monthly volume trends, top customer concentration metrics, and international market distribution across Netherlands, EIRE, Germany, and France.</p>
+        </div>
+        <div class="modal-preview">
+          <img src="Screenshot 2026-11-05 141115_3.jpg" alt="Dashboard Preview" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.powerbi.com" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+          <a href="https://github.com/mckaben" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div id="modal-p5" class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('modal-p5')">&times;</button>
+      <h2>Data Professional Industry & Compensation Survey</h2>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fas fa-users"></i> Survey Breakdown</h4>
+          <p>Evaluates 630 survey participants across salary expectations, dominant programming languages (Python preference), career entry difficulty, and work-life balance scores (5.74/10).</p>
+        </div>
+        <div class="modal-preview">
+          <img src="Screenshot 2026-11-05 141048_3.jpg" alt="Dashboard Preview" />
+        </div>
+        <div class="modal-footer">
+          <a href="https://app.powerbi.com" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Explore Dashboard</a>
+          <a href="https://github.com/mckaben" target="_blank" class="btn btn-github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Experience & Technical Core -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Experience & Skills</h2>
+        <p>Blending senior operations leadership at FedEx with machine learning, data science, and cloud computing expertise.</p>
+      </div>
+
+      <div class="exp-grid">
+        <div class="card glass-card">
+          <h3>Professional Experience</h3>
+          <div class="job-item">
+            <span class="job-date">Nov 2016 – Present</span>
+            <h4>Senior Operations Administrator</h4>
+            <p class="company">FedEx Ground — Kennesaw, GA</p>
+            <ul>
+              <li>Manage a team of 8 administrators, driving cross-functional communication and quality tracking updates.</li>
+              <li>Achieved an 8.5/10 customer satisfaction score collaborating on tracking package updates.</li>
+              <li>Leverage data administration strategies to streamline logistics and resolving inquiries.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card glass-card">
+          <h3>Core Technical Skills</h3>
+          <div class="skill-category">
+            <h4>Languages & Libraries</h4>
+            <p>Python (Pandas, NumPy, scikit-learn, Seaborn, Matplotlib), SQL (PostgreSQL, SQL Server)</p>
+          </div>
+          <div class="skill-category">
+            <h4>BI & Data Visualization</h4>
+            <p>Power BI, DAX, Data Modeling, Tableau, Advanced Excel (VLOOKUP, Pivot Tables), ArcGIS</p>
+          </div>
+          <div class="skill-category">
+            <h4>Cloud & Machine Learning</h4>
+            <p>AWS (EC2, S3, IAM, Pricing), Deep Machine Learning, Statistical Methods, ETL Pipelines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <h2>Let's Connect</h2>
+      <p>I am actively seeking opportunities in Data Science, Business Intelligence, Data Analysis, and Cloud Architecture.</p>
+      <div class="contact-links">
+        <a href="mailto:philippek18@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> philippek18@gmail.com</a>
+        <a href="tel:6787553462" class="contact-btn"><i class="fas fa-phone"></i> (678) 755-3462</a>
+        <a href="https://www.linkedin.com/in/philippe-kabenla-273519134" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/mckaben" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p class="copyright">&copy; 2026 Philippe Kabenla. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for Filtering & Modals -->
+  <script>
+    // Filter Gallery Items
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.dash-card').forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal Control Functions
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close Modal on Background Click
+    window.addEventListener('click', (event) => {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</body>
 </html>
